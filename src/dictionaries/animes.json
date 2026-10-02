@@ -1,0 +1,10 @@
+{
+    "$schema": "../../scripts/dictionary.schema.json",
+    "items": [
+        {
+            "reading": "ちょうかぐやひめ",
+            "word": "超かぐや姫！",
+            "partOfSpeech": "固有名詞"
+        }
+    ]
+}
