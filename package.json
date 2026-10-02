@@ -1,0 +1,33 @@
+{
+  "name": "ime-dictionary",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/Robot-Inventor/ime-dictionary#readme",
+  "bugs": {
+    "url": "https://github.com/Robot-Inventor/ime-dictionary/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robot-Inventor/ime-dictionary.git"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Robot-Inventor",
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit && knip && oxlint scripts",
+    "format": "prettier --write scripts src",
+    "format:check": "prettier --check scripts src",
+    "build": "bun scripts/build.ts"
+  },
+  "devDependencies": {
+    "@robot-inventor/oxlint-config": "^0.5.0",
+    "@robot-inventor/tsconfig-base": "^7.2.0",
+    "@types/node": "^26.6.4",
+    "arktype": "^2.2.7",
+    "knip": "^6.39.0",
+    "oxlint": "^1.86.0",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2"
+  }
+}

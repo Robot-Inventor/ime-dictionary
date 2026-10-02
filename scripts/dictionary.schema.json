@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "partOfSpeech": {
+                        "enum": [
+                            "サジェストのみ",
+                            "人名",
+                            "副詞",
+                            "助動詞",
+                            "助詞",
+                            "動詞",
+                            "名",
+                            "名詞",
+                            "品詞なし",
+                            "固有名詞",
+                            "地名",
+                            "姓",
+                            "形容詞",
+                            "感動詞",
+                            "接続詞",
+                            "接頭詞",
+                            "短縮よみ",
+                            "組織",
+                            "記号",
+                            "連体詞",
+                            "顔文字"
+                        ]
+                    },
+                    "reading": {
+                        "type": "string"
+                    },
+                    "word": {
+                        "type": "string"
+                    },
+                    "comment": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "partOfSpeech",
+                    "reading",
+                    "word"
+                ]
+            }
+        }
+    },
+    "required": [
+        "items"
+    ]
+}
