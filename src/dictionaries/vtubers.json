@@ -1,0 +1,30 @@
+{
+    "$schema": "../../scripts/dictionary.schema.json",
+    "items": [
+        {
+            "reading": "かふ",
+            "word": "花譜",
+            "partOfSpeech": "人名"
+        },
+        {
+            "reading": "りめ",
+            "word": "理芽",
+            "partOfSpeech": "人名"
+        },
+        {
+            "reading": "いせかいじょうちょ",
+            "word": "ヰ世界情緒",
+            "partOfSpeech": "人名"
+        },
+        {
+            "reading": "のののの",
+            "word": "音ノ乃のの",
+            "partOfSpeech": "人名"
+        },
+        {
+            "reading": "げっぱくるい",
+            "word": "月白累",
+            "partOfSpeech": "人名"
+        }
+    ]
+}
