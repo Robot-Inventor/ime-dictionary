@@ -18,9 +18,13 @@
     "lint": "tsc --noEmit && knip && oxlint scripts",
     "format": "prettier --write scripts src",
     "format:check": "prettier --check scripts src",
-    "build": "bun scripts/build.ts"
+    "build": "bun scripts/build.ts",
+    "ci:version": "changeset version",
+    "ci:publish": "bun run build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
     "@robot-inventor/oxlint-config": "^0.5.0",
     "@robot-inventor/tsconfig-base": "^7.2.0",
     "@types/node": "^26.6.4",

@@ -1,0 +1,52 @@
+name: Release
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+    release:
+        runs-on: windows-latest
+
+        permissions:
+            contents: write
+            id-token: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+            - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+
+            - run: bun install --frozen-lockfile
+
+            - name: Create Release Pull Request or Publish to npm
+              id: changesets
+              uses: changesets/action@ae32849d5ba541f9ae29e40e22a623bc13562f51 # v2.1.2
+              with:
+                  version-script: bun run ci:version
+                  publish-script: bun run ci:publish
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Build artifacts for release retry
+              if: github.event_name == 'workflow_dispatch'
+              run: bun run build
+
+            - name: Upload dictionary to GitHub Release
+              if: steps.changesets.outputs.published == 'true' || github.event_name == 'workflow_dispatch'
+              shell: pwsh
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  $version = (Get-Content -Raw package.json | ConvertFrom-Json).version
+                  $asset = "dist/dictionary.tsv"
+
+                  if (-not (Test-Path -LiteralPath $asset -PathType Leaf)) {
+                      throw "Dictionary release asset not found: $asset"
+                  }
+
+                  gh release upload "v$version" $asset --repo $env:GITHUB_REPOSITORY --clobber
