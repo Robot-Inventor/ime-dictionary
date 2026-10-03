@@ -1,5 +1,11 @@
 # ime-dictionary
 
+## 0.3.0
+
+### Minor Changes
+
+- [#8](https://github.com/Robot-Inventor/ime-dictionary/pull/8) [`c5e272e`](https://github.com/Robot-Inventor/ime-dictionary/commit/c5e272e7c1669979691573a24172b7b1141d67e1) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add `general.json`
+
 ## 0.2.0
 
 ### Minor Changes
