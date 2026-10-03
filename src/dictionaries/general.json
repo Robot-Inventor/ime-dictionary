@@ -1,0 +1,25 @@
+{
+    "$schema": "../../scripts/dictionary.schema.json",
+    "items": [
+        {
+            "reading": "ろぼいん",
+            "word": "ろぼいん",
+            "partOfSpeech": "人名"
+        },
+        {
+            "reading": "ものれぽ",
+            "word": "モノレポ",
+            "partOfSpeech": "名詞"
+        },
+        {
+            "reading": "かたていぎ",
+            "word": "型定義",
+            "partOfSpeech": "名詞"
+        },
+        {
+            "reading": "かたあんぜん",
+            "word": "型安全",
+            "partOfSpeech": "名詞"
+        }
+    ]
+}
