@@ -1,5 +1,13 @@
 # ime-dictionary
 
+## 0.4.0
+
+### Minor Changes
+
+- [#12](https://github.com/Robot-Inventor/ime-dictionary/pull/12) [`596d4a8`](https://github.com/Robot-Inventor/ime-dictionary/commit/596d4a82839a5e6f1a891e3e5ab5e7a7014ac50d) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add スミレキーボード to `general.json`
+
+- [#13](https://github.com/Robot-Inventor/ime-dictionary/pull/13) [`14a0852`](https://github.com/Robot-Inventor/ime-dictionary/commit/14a0852f8eeaa489ed290b9b80b06151fcf1477d) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add `ai.json`
+
 ## 0.3.1
 
 ### Patch Changes
