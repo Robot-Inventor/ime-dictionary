@@ -1,0 +1,25 @@
+{
+    "$schema": "../../scripts/dictionary.schema.json",
+    "items": [
+        {
+            "reading": "にちじせいげん",
+            "word": "日次制限",
+            "partOfSpeech": "名詞"
+        },
+        {
+            "reading": "しゅうじせいげん",
+            "word": "週次制限",
+            "partOfSpeech": "名詞"
+        },
+        {
+            "reading": "げつじせいげん",
+            "word": "月次制限",
+            "partOfSpeech": "名詞"
+        },
+        {
+            "reading": "つきじせいげん",
+            "word": "月次制限",
+            "partOfSpeech": "名詞"
+        }
+    ]
+}
