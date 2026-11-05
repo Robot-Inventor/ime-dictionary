@@ -15,6 +15,7 @@ const main = async (): Promise<void> => {
     const dictionaryPromises = filePaths.map(async (path) => {
         const data = await readFile(path, "utf-8");
         const parsed = parseDictionary(data);
+
         return parsed instanceof type.errors ? [] : parsed.items;
     });
 
@@ -22,6 +23,7 @@ const main = async (): Promise<void> => {
     const tsv = dictionary
         .map((item) => `${item.reading}\t${item.word}\t${item.partOfSpeech}\t${item.comment ?? ""}`)
         .join("\n");
+
     await mkdir("./dist", { recursive: true });
     await writeFile("./dist/dictionary.tsv", `${tsv}\n`);
 };
