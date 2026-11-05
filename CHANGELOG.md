@@ -1,5 +1,30 @@
 # ime-dictionary
 
+## 0.5.0
+
+### Minor Changes
+
+- [#21](https://github.com/Robot-Inventor/ime-dictionary/pull/21) [`c6a34b8`](https://github.com/Robot-Inventor/ime-dictionary/commit/c6a34b8fe1fb533b6373adfe735a0cc94ba5bb25) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add some words to `ai.json`
+
+    - Codex
+    - Claude
+    - Claude Code
+    - OpenCode
+    - Grok
+    - Grok Bot
+    - Muse
+
+- [#18](https://github.com/Robot-Inventor/ime-dictionary/pull/18) [`067f703`](https://github.com/Robot-Inventor/ime-dictionary/commit/067f70383a35a5f7cace4cec97a20ddc66eb7ef1) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add `vr.json`
+
+- [#22](https://github.com/Robot-Inventor/ime-dictionary/pull/22) [`8f1924c`](https://github.com/Robot-Inventor/ime-dictionary/commit/8f1924c84730fadf49c2714172e810d2130f1004) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add some words to `general.json`
+
+    - Oxlint
+    - Oxfmt
+
+### Patch Changes
+
+- [#19](https://github.com/Robot-Inventor/ime-dictionary/pull/19) [`4c87d40`](https://github.com/Robot-Inventor/ime-dictionary/commit/4c87d403cdd624332dbf3582d15e667d689f40ec) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - chore: normalize the `reading` property of `general.json` to Katakana
+
 ## 0.4.0
 
 ### Minor Changes
