@@ -7,7 +7,7 @@
             "partOfSpeech": "人名"
         },
         {
-            "reading": "ものれぽ",
+            "reading": "モノレポ",
             "word": "モノレポ",
             "partOfSpeech": "名詞"
         },
@@ -22,8 +22,13 @@
             "partOfSpeech": "名詞"
         },
         {
-            "reading": "すみれきーぼーど",
+            "reading": "スミレキーボード",
             "word": "スミレキーボード",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "モズキー",
+            "word": "MozKey",
             "partOfSpeech": "固有名詞"
         }
     ]
