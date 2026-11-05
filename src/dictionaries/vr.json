@@ -1,0 +1,15 @@
+{
+    "$schema": "../../scripts/dictionary.schema.json",
+    "items": [
+        {
+            "reading": "バーチャルデスクトップ",
+            "word": "Virtual Desktop",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "エックスエスオーバーレイ",
+            "word": "XSOverlay",
+            "partOfSpeech": "固有名詞"
+        }
+    ]
+}
