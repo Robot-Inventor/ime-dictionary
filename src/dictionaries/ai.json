@@ -20,6 +20,41 @@
             "reading": "つきじせいげん",
             "word": "月次制限",
             "partOfSpeech": "名詞"
+        },
+        {
+            "reading": "コーデックス",
+            "word": "Codex",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "クロード",
+            "word": "Claude",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "クロードコード",
+            "word": "Claude Code",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "オープンコード",
+            "word": "OpenCode",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "グロック",
+            "word": "Grok",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "グロックボット",
+            "word": "Grok Bot",
+            "partOfSpeech": "固有名詞"
+        },
+        {
+            "reading": "ミューズ",
+            "word": "Muse",
+            "partOfSpeech": "固有名詞"
         }
     ]
 }
